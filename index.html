@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Visuify</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="navigation">
+      <a href="/">{ elliotec }</a>
+    </header>
+    <h1>Visuify</h1>
+    <h3>A Spotify related artists data visualizer</h3>
+    <em>Hover, drag, and click the nodes and links!</em>
+    <form>
+        <input type="text" id="query" placeholder="Enter artist name">
+        <button id="submit">Draw Graph</button>
+    </form>
+
+    <a id="uri"></a>
+    <h2 id="message"></h2>
+    <svg id="chart"></svg>
+
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.4/lodash.min.js"></script>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
